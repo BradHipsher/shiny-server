@@ -5,12 +5,15 @@ shinyUI(
   
   dashboardPage(
     
+    title = "Shiny App",
+    skin = "purple",
+    
     dashboardHeader(
       title = "This is a Shiny app"
     ),
     
     dashboardSidebar(
-      disable = T
+      collapsed = T
     ),
     
     dashboardBody()
