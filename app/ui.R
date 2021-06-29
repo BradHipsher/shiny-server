@@ -22,17 +22,13 @@ shinyUI(
     
     dashboardBody(
       
-      column(
+      box(
         
-        box(
+        width = 6,
+        
+        textOutput(
           
-          width = 6,
-          
-          textOutput(
-            
-            outputId = "test"
-            
-          )
+          outputId = "test"
           
         )
         

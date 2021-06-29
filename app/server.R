@@ -6,7 +6,7 @@ shinyServer(function(input, output) {
   df <- read.csv("./data/collection.csv")
   
   output$test <- renderText({
-    "Server side is running"
+    paste0("Server side is running: ",nrow(df))
   })
   
 })
