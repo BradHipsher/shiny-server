@@ -9,14 +9,36 @@ shinyUI(
     skin = "purple",
     
     dashboardHeader(
+      
       title = "This is a Shiny app"
+      
     ),
     
     dashboardSidebar(
+      
       collapsed = T
+      
     ),
     
-    dashboardBody()
+    dashboardBody(
+      
+      column(
+        
+        box(
+          
+          width = 6,
+          
+          textOutput(
+            
+            outputId = "test"
+            
+          )
+          
+        )
+        
+      )
+      
+    )
     
   )
   
